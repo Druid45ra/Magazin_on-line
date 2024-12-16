@@ -11,6 +11,8 @@ body {
     background-color: #f7f7f7;
     background: linear-gradient(to right, #f9f9f9, #f0e68c);
     color: #333;
+    padding: 20px;
+    /* Adăugăm puțin padding pentru a evita marginea */
 }
 
 /* Header */
@@ -24,7 +26,7 @@ header {
 }
 
 .logo {
-    font-size: 5.5rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 
@@ -52,170 +54,99 @@ nav ul li a:hover {
     font-size: 1;
 }
 
-/* Product Container */
+/* Contact Page Styles */
 h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 5.5rem;
+    font-size: 3rem;
+    /* Dimensiune mai mică pentru titlul paginii de contact */
     color: #6e00ff;
-}
-
-.product-details p {
-    font-size: 1.2rem;
-    line-height: 1.5;
-}
-
-.product-container {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-    max-width: 1200px;
-    margin: auto;
-    background-color: white;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-}
-
-/* Product Gallery */
-.product-gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.product-gallery img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.2s;
-}
-
-.product-gallery img:hover {
-    transform: scale(1.05);
-    /* Efect de zoom la hover */
-}
-
-.thumbnails {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 10px;
-}
-
-.thumbnails img {
-    width: 80px;
-    height: auto;
-    cursor: pointer;
-    border: 2px solid transparent;
-}
-
-.thumbnails img:hover {
-    border: 2px solid #6e00ff;
-}
-
-/* Product Details */
-.product-details {
-    margin-top: 20px;
-}
-
-.product-details h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.company {
-    font-size: 1.2rem;
-    color: #777;
-}
-
-.price {
-    font-size: 1.5rem;
-    margin: 10px 0;
-}
-
-.current-price {
-    color: #6e00ff;
-}
-
-.old-price {
-    text-decoration: line-through;
-    color: #999;
-    margin-left: 10px;
-}
-
-.discount {
-    color: red;
-    margin-left: 10px;
-}
-
-.description {
-    margin: 10px 0;
-}
-
-.quantity-selector {
-    display: flex;
-    align-items: center;
-    margin: 20px 0;
-}
-
-.quantity-selector button {
-    background-color: #6e00ff;
-    color: white;
-    border: none;
-    padding: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.quantity-selector button:hover {
-    background-color: darkblue;
-}
-
-.quantity-selector input {
-    width: 50px;
     text-align: center;
-    margin: 0 10px;
+    /* Centrarea titlului */
+    margin-bottom: 20px;
+    /* Spațiere sub titlu */
 }
 
-/* Add to Cart Button */
-.add-to-cart {
-    background-color: #6e00ff;
-    color: white;
-    border: none;
-    padding: 15px 20px;
-    cursor: pointer;
-    font-size: 1.2rem;
-    transition: background-color 0.3s ease, transform 0.2s;
-}
-
-.add-to-cart:hover {
-    background-color: darkblue;
-    transform: scale(1.05);
-    /* Efect de zoom la hover */
-}
-
-/* Responsive Design */
-@media (min-width: 600px) {
-    .product-container {
-        flex-direction: row;
-    }
-
-    .product-gallery {
-        flex: 1;
-    }
-
-    .product-details {
-        flex: 1;
-        padding-left: 20px;
-    }
-}
-
-.testimonials {
-    background-color: #fff;
+.contact-details {
+    background-color: white;
+    /* Fundal alb pentru detalii */
+    border-radius: 8px;
+    /* Colțuri rotunjite */
     padding: 20px;
-    margin: 20px 0;
+    /* Spațiere interioară */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Umbră pentru adâncire */
+    margin: 20px auto;
+    /* Centrarea pe pagină */
+    max-width: 600px;
+    /* Lățime maximă */
 }
 
-.testimonial {
-    margin-bottom: 15px;
-    font-style: italic;
+.contact-details p {
+    font-size: 1.2rem;
+    /* Dimensiune text pentru detalii */
+    line-height: 1.5;
+    /* Spațiere între linii */
+    margin-bottom: 10px;
+    /* Spațiere între paragrafe */
+}
+
+form {
+    background-color: white;
+    /* Fundal alb pentru formular */
+    border-radius: 8px;
+    /* Colțuri rotunjite */
+    padding: 20px;
+    /* Spațiere interioară */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Umbră pentru adâncire */
+    margin: 20px auto;
+    /* Centrarea pe pagină */
+    max-width: 600px;
+    /* Lățime maximă */
+}
+
+label {
+    display: block;
+    /* Afișare pe linii separate */
+    margin: 10px 0 5px;
+    /* Spațiere între etichete și câmpuri */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    /* Lățimea completă */
+    padding: 10px;
+    /* Spațiere interioară */
+    border: 1px solid #ccc;
+    /* Bordură gri deschis */
+    border-radius: 4px;
+    /* Colțuri rotunjite */
+    margin-bottom: 10px;
+    /* Spațiere între câmpuri */
+}
+
+button {
+    background-color: #6e00ff;
+    /* Culoare de fundal pentru buton */
+    color: white;
+    /* Culoarea textului din buton */
+    border: none;
+    /* Fără bordură */
+    padding: 10px 15px;
+    /* Spațiere interioară */
+    border-radius: 4px;
+    /* Colțuri rotunjite */
+    cursor: pointer;
+    /* Cursor pointer la hover */
+    transition: background-color 0.3s ease;
+    /* Tranziție pentru hover */
+}
+
+button:hover {
+    background-color: darkblue;
+    /* Culoare mai închisă la hover */
 }
 
 /* Footer Styling */
@@ -232,4 +163,153 @@ footer {
     margin: 0 10px;
     text-decoration: none;
     color: #6e00ff;
+}
+
+/* Responsive Design */
+@media (min-width: 600px) {
+
+    .contact-details,
+    form {
+        max-width: 800px;
+        /* Lățime maximă pentru ecrane mari */
+    }
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    /* Permite rânduri multiple */
+    justify-content: space-around;
+    /* Distribuie produsele uniform */
+    margin: 20px;
+    /* Spațiere în jurul listei de produse */
+}
+
+.product-item {
+    background-color: white;
+    /* Fundal alb pentru fiecare produs */
+    border-radius: 8px;
+    /* Colțuri rotunjite */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    /* Umbră pentru adâncire */
+    margin: 10px;
+    /* Spațiere între produse */
+    padding: 15px;
+    /* Spațiere interioară */
+    text-align: center;
+    /* Centrarea textului */
+    width: 200px;
+    /* Lățime fixă pentru fiecare produs */
+}
+
+.product-item img {
+    max-width: 100%;
+    /* Asigură-te că imaginea se potrivește în container */
+    border-radius: 8px;
+    /* Colțuri rotunjite pentru imagine */
+}
+
+.add-to-cart {
+    background-color: #6e00ff;
+    /* Culoare de fundal pentru buton */
+    color: white;
+    /* Culoarea textului din buton */
+    border: none;
+    /* Fără bordură */
+    padding: 10px 15px;
+}
+
+.add-to-cart:hover {
+    background-color: #5a00cc;
+    /* Culoare de fundal la hover */
+}
+
+.back-button {
+    text-align: center;
+    /* Centrarea butonului */
+    margin: 20px 0;
+    /* Spațiere deasupra și dedesubt */
+}
+
+.back-button button {
+    background-color: #6e00ff;
+    /* Culoare de fundal pentru buton */
+    color: white;
+    /* Culoarea textului din buton */
+    border: none;
+    /* Fără bordură */
+    padding: 10px 15px;
+    /* Spațiere interioară */
+    border-radius: 4px;
+    /* Colțuri rotunjite */
+    cursor: pointer;
+    /* Cursor pointer la hover */
+    transition: background-color 0.3s ease;
+    /* Tranziție pentru hover */
+}
+
+.back-button button:hover {
+    background-color: darkblue;
+    /* Culoare mai închisă la hover */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('images/background.jpg') no-repeat center center fixed;
+    /* Imagine de fundal */
+    background-size: cover;
+    /* Acoperă întreaga pagină */
+    color: #333;
+}
+
+/* Main Content */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* Înălțimea completă a ferestrei */
+    text-align: center;
+    /* Centrarea textului */
+    color: white;
+    /* Culoarea textului */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Fundal semi-transparent pentru text */
+    border-radius: 10px;
+    /* Colțuri rotunjite */
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 4rem;
+    /* Dimensiune mai mică pentru titlu */
+    margin-bottom: 20px;
+    /* Spațiere sub titlu */
+}
+
+.shop-button {
+    background-color: #6e00ff;
+    /* Culoare de fundal pentru buton */
+    color: white;
+    /* Culoarea textului din buton */
+    padding: 15px 30px;
+    /* Spațiere interioară */
+    border: none;
+    /* Fără bordură */
+    border-radius: 5px;
+    /* Colțuri rotunjite */
+    font-size: 1.2rem;
+    /* Dimensiune text */
+    text-decoration: none;
+    /* Fără subliniere */
+    transition: background-color 0.3s ease;
+    /* Tranziție pentru hover */
+}
+
+.shop-button:hover {
+    background-color: darkblue;
+    /* Culoare mai închisă la hover */
 }
