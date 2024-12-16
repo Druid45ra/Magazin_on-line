@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin on-line</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script
+</head>
+
+<body>
+    <header>
+        <div class="logo">Produsele noastre</div>
+        <nav>
+            <ul>
+                <li><a href="#">Patiserie</a></li>
+                <li><a href="#">Cafenea</a></li>
+                <li><a href="#">Cofetarie</a></li>
+                <li><a href="#">Despre</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="user-controls">
+            <div class="cart">🛒</div>
+            <div class="user">👤</div>
+        </div>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <img id="main-image"
+                src="images/cookies-3918049_640.jpg"
+                alt="cookies">
+            <div class="thumbnails">
+                <img onclick="changeImage(this.src)"
+                    src="images/cookies-3918049_640.jpg"
+                    alt="Thumbnail 1">
+                <img onclick="changeImage(this.src)"
+                    src="images/strawberries-8295645_640.jpg"
+                    alt="Thumbnail 2">
+                <img onclick="changeImage(this.src)"
+                    src="images/coffee-8668442_640.jpg"
+                    alt="Thumbnail 3">
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Produse</h1>
+            <p class="company">Numele producătorului</p>
+            <p class="price">
+                <span class="current-price">RON 10</span>
+                <span class="old-price">RON 20</span>
+                <span class="discount">50% OFF</span>
+            </p>
+            <p class="description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Adaugă in coș</button>
+        </div>
+    </div>
+
+    <section class="testimonials">
+        <h2>Ce spun clienții noștri</h2>
+        <div class="testimonial">
+            <p>"Cele mai bune prăjituri pe care le-am gustat vreodată!" - Maria</p>
+        </div>
+        <div class="testimonial">
+            <p>"Atmosferă plăcută și produse delicioase!" - Andrei</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Druid45ra. Toate drepturile rezervate.</p>
+            <div class="social-links">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
